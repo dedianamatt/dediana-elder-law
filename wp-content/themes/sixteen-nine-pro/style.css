@@ -863,7 +863,8 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #000;
+	/*background-color: #0B3648;*/
+	background-image: url("http://dev-dediana-elder-law-development.pantheon.io/wp-content/uploads/2015/03/VerticalFabric.png");
 	color: #999;
 	float: left;
 	height: 100%;
@@ -947,7 +948,7 @@ Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 
 .genesis-nav-menu {
-	border-top: 1px solid #333;
+	border-top: 1px solid #fff;
 	clear: both;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 16px;
@@ -959,7 +960,7 @@ Site Navigation
 }
 
 .genesis-nav-menu li {
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #fff;
 	float: left;
 	list-style-type: none;
 	width: 100%;
@@ -997,8 +998,8 @@ Site Navigation
 
 .genesis-nav-menu .sub-menu a {
 	background-color: #000;
-	border-left: 1px solid #333;
-	border-right: 1px solid #333;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
 	color: #999;
 	letter-spacing: 0;
 	position: relative;
@@ -1351,7 +1352,7 @@ Media Queries
 	}
 
 	.genesis-nav-menu {
-		border-bottom: 1px solid #333;
+		border-bottom: 1px solid #fff;
 		margin: 0 0 20px;
 		text-align: center;
 	}

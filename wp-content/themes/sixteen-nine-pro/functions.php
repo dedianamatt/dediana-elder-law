@@ -165,3 +165,10 @@ add_theme_support( 'genesis-after-entry-widget-area' );
 //* Relocate after entry widget
 remove_action( 'genesis_after_entry', 'genesis_after_entry_widget_area' );
 add_action( 'genesis_after_entry', 'genesis_after_entry_widget_area', 5 );
+
+if ( function_exists( 'pronamic_google_maps' ) ) {
+    pronamic_google_maps( array(
+        'width'  => 290,
+        'height' => 200 
+    ) );
+}

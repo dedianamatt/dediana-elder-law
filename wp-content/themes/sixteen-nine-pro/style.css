@@ -459,8 +459,13 @@ Structure and Layout
 --------------------------------------------- */
 
 .site-container {
-	max-width: 1280px;
+	max-width: 1380px;
 }
+
+/*--custom
+.site-container {
+	max-width: 1280px;
+}--*/
 
 .sixteen-nine-landing .site-container {
 	margin: 40px auto;
@@ -469,8 +474,14 @@ Structure and Layout
 
 .site-inner {
 	float: right;
-	width: 1040px;
+	width: 1140px;
 }
+
+/*
+.site-inner {
+	float: right;
+	width: 1040px;
+}*/
 
 .sixteen-nine-landing .site-inner {
 	float: none;
@@ -493,7 +504,9 @@ Structure and Layout
 	background-color: #fff;
 	float: left;
 	padding: 48px 60px 60px;
-	width: 760px;
+	/*--custom 
+	width: 760px;--*/
+	width: 860px;
 }
 
 .full-width-content .content {
@@ -1324,7 +1337,9 @@ Site Footer
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1264px) {
+/*--custom
+@media only screen and (max-width: 1264px) {--*/
+@media only screen and (max-width: 1364px) {
 
 	.full-width-content .content,
 	.site-header,

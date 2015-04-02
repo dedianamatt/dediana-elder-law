@@ -32,7 +32,7 @@ add_action( 'wp_enqueue_scripts', 'sixteen_nine_google_fonts' );
 function sixteen_nine_google_fonts() {
 
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css?family=Playfair+Display:300italic|Roboto:300,700|Roboto+Condensed:300,700|Roboto+Slab:300', array(), PARENT_THEME_VERSION );
+	wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css?family=Playfair+Display+SC:400|Playfair+Display:300italic|Roboto:300,700|Roboto+Condensed:300,700|Roboto+Slab:300', array(), PARENT_THEME_VERSION );
 
 }
 
@@ -146,18 +146,17 @@ function sixteen_nine_remove_comment_form_allowed_tags( $defaults ) {
 remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
-add_action( 'genesis_header', 'genesis_footer_markup_open', 11 );
+/*add_action( 'genesis_header', 'genesis_footer_markup_open', 11 );
 add_action( 'genesis_header', 'genesis_do_footer', 12 );
-add_action( 'genesis_header', 'genesis_footer_markup_close', 13 );
+add_action( 'genesis_header', 'genesis_footer_markup_close', 13 );*/
 
 //* Customize the footer
-add_filter( 'genesis_footer_output', 'sixteen_nine_custom_footer' );
+/*add_filter( 'genesis_footer_output', 'sixteen_nine_custom_footer' );
 function sixteen_nine_custom_footer( $output ) {
 
 	$output = sprintf( '<p>%s<a href="http://www.studiopress.com/">%s</a></p>',  __( 'Powered by ', 'sixteen-nine' ), __( 'Genesis', 'sixteen-nine' ) );
 	return $output;
-
-}
+}*/
 
 //* Add support for after entry widget
 add_theme_support( 'genesis-after-entry-widget-area' );
